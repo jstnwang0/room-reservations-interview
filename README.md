@@ -105,15 +105,6 @@ Where behavior is not specified, make a reasonable decision and document it in
 - Production deployment and large-scale infrastructure.
 - Pagination and historical-data optimization.
 
-## Optional extensions
-
-Only attempt these after the required workflows are reliable:
-
-- An availability view across rooms.
-- A reservation activity history.
-- Broader automated test coverage.
-- Responsive or accessibility improvements.
-
 ## Submission
 
 Before time expires:
