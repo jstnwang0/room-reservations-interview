@@ -36,6 +36,18 @@ Authenticated users should be able to:
 5. Cancel one of their own future reservations.
 6. Filter the schedule by room or date.
 
+### Rooms
+
+The office has three rooms:
+
+- Atlas — capacity 4.
+- Cedar — capacity 8.
+- Summit — capacity 12.
+
+These rooms must be available when the application starts. You may choose how
+to seed or persist them, but the frontend must obtain them from the backend.
+Creating, editing, and deleting rooms is out of scope.
+
 Each room should have a name and capacity. Each reservation should display:
 
 - Meeting title.
@@ -64,6 +76,7 @@ prepared to explain those decisions.
 
 - Use the provided React + TypeScript frontend and FastAPI backend.
 - The application must run through Docker Compose.
+- The backend must expose the fixed room inventory through `GET /api/rooms`.
 - You may choose the database, persistence library, authentication mechanism,
   API structure, and client-side state approach.
 - Do not use a library or generated product that implements the assignment's
